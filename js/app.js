@@ -4,7 +4,7 @@
     app.controller('StoreController', ['$http', function($http){
         var store = this;
         store.products = [ ];
-        $http.get('/basic-web/products.json').success(function(data){
+        $http.get('/basic-web/products.data').success(function(data){
             store.products = data;
         });
     }]);
